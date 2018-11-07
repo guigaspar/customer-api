@@ -8,14 +8,11 @@ import org.springframework.stereotype.Service;
 import com.guigaspar.customerapi.domain.Customer;
 import com.guigaspar.customerapi.repository.CustomerRepository;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @Service
 public class CustomerServiceImpl implements CustomerService{
 	
 	CustomerRepository customerRepository;
-		
+	
 	public CustomerServiceImpl(CustomerRepository customerRepository) {
 		this.customerRepository = customerRepository;
 	}
